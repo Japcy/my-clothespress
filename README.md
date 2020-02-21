@@ -61,13 +61,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - this.goods[type].list.push(...res.data.list)
   - this.goods[type].page += 1
 
-```js
-      goods: {
-            pop: { page: 0, list: [] },
-            new: { page: 0, list: [] },
-            sell: { page: 0, list: [] }
-          },
-```
+
 
 ### 四. 对商品数据进行展示
 
