@@ -43,14 +43,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 #### 3.1. 设计数据结构, 用于保存数据
 
 goods: {
-
-pop: page/list
-
-new: page/list
-
-sell: page/list
-
-}
+        pop: { page: 0, list: [] },
+        new: { page: 0, list: [] },
+        sell: { page: 0, list: [] }
+      },
 
 
 
@@ -65,14 +61,10 @@ sell: page/list
   - this.goods[type].page += 1
 
 goods: {
-
-pop: page1:/list[30]
-
-new: page1/list[30]
-
-sell: page1/list[30]
-
-}
+        pop: { page: 0, list: [] },
+        new: { page: 0, list: [] },
+        sell: { page: 0, list: [] }
+      },
 
 ### 四. 对商品数据进行展示
 
