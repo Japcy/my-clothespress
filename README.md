@@ -42,12 +42,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 #### 3.1. 设计数据结构, 用于保存数据
 
-goods: {
-        pop: { page: 0, list: [] },
-        new: { page: 0, list: [] },
-        sell: { page: 0, list: [] }
-      },
-
+```js
+      goods: {
+            pop: { page: 0, list: [] },
+            new: { page: 0, list: [] },
+            sell: { page: 0, list: [] }
+          },
+```
 
 
 #### 3.2. 发送数据请求
@@ -60,11 +61,13 @@ goods: {
   - this.goods[type].list.push(...res.data.list)
   - this.goods[type].page += 1
 
-goods: {
-        pop: { page: 0, list: [] },
-        new: { page: 0, list: [] },
-        sell: { page: 0, list: [] }
-      },
+```js
+      goods: {
+            pop: { page: 0, list: [] },
+            new: { page: 0, list: [] },
+            sell: { page: 0, list: [] }
+          },
+```
 
 ### 四. 对商品数据进行展示
 
@@ -182,7 +185,11 @@ goods: {
 
 ### 八. 上拉加载更多的功能
 
-y  ifu
+- 在scroll中监听上拉事件，并在父组件中添加处理上拉事件的方法：
+  ```js
+  - this.goods[type].list.push(...res.data.list);
+  - this.goods[type].page += 1;
+  ```
 
 ### 九. tabControl的吸顶效果
 
