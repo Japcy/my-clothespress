@@ -19,8 +19,9 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
+### 目录结构
 
-## 开发思路整理
+```
 
 │  .editorconfig
 │  .gitignore
@@ -31,11 +32,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 │  README.md
 │  vue.config.js
 │
-
-### 目录结构
-
-```
-
 ├─public
 │  │  favicon.ico
 │  │  index.html
@@ -187,6 +183,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
                     ListView.vue
                     UserInfo.vue
 ```
+
+## 开发思路整理
 
 ### 一. FeatureView
 
