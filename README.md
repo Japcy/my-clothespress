@@ -1,4 +1,4 @@
-# supermall2
+# 仿蘑菇街APP
 
 ## Project setup
 ```
@@ -19,6 +19,8 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
+
+## 开发思路整理
 
 ### 一. FeatureView
 
