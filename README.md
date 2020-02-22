@@ -22,6 +22,169 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 开发思路整理
 
+│  .editorconfig
+│  .gitignore
+│  babel.config.js
+│  LICENSE
+│  package-lock.json
+│  package.json
+│  README.md
+│  vue.config.js
+│
+
+### 目录结构
+
+├─public
+│  │  favicon.ico
+│  │  index.html
+│  │
+│  └─profileicon
+│          cart-full.svg
+│          download.svg
+│          email.svg
+│          Newuserzone.svg
+│          rmb.svg
+│          vip.svg
+│
+└─src
+    │  App.vue
+    │  main.js
+    │
+    ├─assets
+    │  ├─css
+    │  │      base.css
+    │  │      normalize.css
+    │  │
+    │  └─img
+    │      ├─cart
+    │      │      tick.svg
+    │      │
+    │      ├─common
+    │      │      back.svg
+    │      │      collect.svg
+    │      │      placeholder.png
+    │      │      top.png
+    │      │
+    │      ├─detail
+    │      │      detail_bottom.png
+    │      │
+    │      ├─home
+    │      │      recommend_bg.jpg
+    │      │
+    │      ├─profileicon
+    │      │      cart-full.svg
+    │      │      download.svg
+    │      │      email.svg
+    │      │      Newuserzone.svg
+    │      │      rmb.svg
+    │      │      vip.svg
+    │      │
+    │      └─tabbar
+    │              cart.svg
+    │              cart_active.svg
+    │              category.svg
+    │              category_active.svg
+    │              home.svg
+    │              home_active.svg
+    │              profile.svg
+    │              profile_active.svg
+    │
+    ├─common
+    │      mixin.js
+    │      utils.js
+    │
+    ├─components
+    │  ├─common
+    │  │  ├─navbar
+    │  │  │      NavBar.vue
+    │  │  │
+    │  │  ├─scroll
+    │  │  │      Scroll.vue
+    │  │  │
+    │  │  ├─swiper
+    │  │  │      index.js
+    │  │  │      Swiper.vue
+    │  │  │      SwiperItem.vue
+    │  │  │
+    │  │  ├─tabbar
+    │  │  │      TabBar.vue
+    │  │  │      TabBarItem.vue
+    │  │  │
+    │  │  └─toast
+    │  │          index.js
+    │  │          Toast.vue
+    │  │
+    │  └─content
+    │      ├─backTop
+    │      │      BackTop.vue
+    │      │
+    │      ├─goods
+    │      │      GoodsList.vue
+    │      │      GoodsListItem.vue
+    │      │
+    │      ├─mainTabbar
+    │      │      MainTabBar.vue
+    │      │
+    │      └─tabControl
+    │              TabControl.vue
+    │
+    ├─network
+    │      detail.js
+    │      home.js
+    │      requiest.js
+    │
+    ├─router
+    │      index.js
+    │
+    ├─store
+    │      index.js
+    │
+    └─views
+        ├─cart
+        │  │  Cart.vue
+        │  │
+        │  └─childComps
+        │          BottomBar.vue
+        │          CartList.vue
+        │          CartListItem.vue
+        │          CheckButton.vue
+        │
+        ├─category
+        │  │  Category.vue
+        │  │
+        │  └─childComps
+        │          TabContent.vue
+        │          TabContentCategory.vue
+        │          TabContentDetail.vue
+        │          TabMenu.vue
+        │
+        ├─detail
+        │  │  Detail.vue
+        │  │
+        │  └─childComps
+        │          DetailBaseInfo.vue
+        │          DetailBottomBar.vue
+        │          DetailCommentInfo.vue
+        │          DetailGoodsInfo.vue
+        │          DetailParamInfo.vue
+        │          DetailShopInfo.vue
+        │          DetailSwiper.vue
+        │
+        ├─home
+        │  │  Home.vue
+        │  │
+        │  └─childComps
+        │          FeatureView.vue
+        │          HomeSwiper.vue
+        │          RecommendView.vue
+        │
+        └─profile
+            │  Profile.vue
+            │
+            └─childComps
+                    ListView.vue
+                    UserInfo.vue
+
 ### 一. FeatureView
 
 - 独立组件封装FeatureView
