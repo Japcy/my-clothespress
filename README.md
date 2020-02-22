@@ -34,6 +34,8 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 目录结构
 
+```
+
 ├─public
 │  │  favicon.ico
 │  │  index.html
@@ -184,6 +186,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
             └─childComps
                     ListView.vue
                     UserInfo.vue
+```
 
 ### 一. FeatureView
 
